@@ -8,6 +8,7 @@ import IconButton from 'components/icon-button'
 import useI18n from 'libs/web/hooks/use-i18n'
 import { CircularProgress } from '@material-ui/core'
 import { Favorites } from './favorites'
+import { TableOfContents } from './table-of-contents'
 
 const SideBarList = () => {
   const { t } = useI18n()
@@ -106,6 +107,9 @@ const SideBarList = () => {
           )}
         ></Tree>
       </div>
+
+      {/* TOC */}
+      <TableOfContents />
     </section>
   )
 }
